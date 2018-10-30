@@ -24,8 +24,6 @@ class EntryForm extends Model{
 		];
 	}
 
-
-
 }
 
 ?>

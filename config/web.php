@@ -9,7 +9,7 @@ $config = [
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm'   => '@vendor/npm-asset'
     ],
     'components' => [
         'request' => [
@@ -38,7 +38,7 @@ $config = [
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => ['error', 'warning','info'],
                 ],
             ],
         ],
@@ -51,6 +51,11 @@ $config = [
             ],
         ],
         */
+        'redis' => [
+            'class' => 'yii\redis\connection',
+            'hostname' => 'localhost',
+            'port' => 6379
+        ],
     ],
     'params' => $params,
 ];
